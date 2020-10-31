@@ -1,0 +1,83 @@
+body{
+    margin:0px;
+    padding:0px;
+    background-color: #1a1a2e;
+}
+
+.videos{
+    width:100%;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    padding:10px;
+    margin:20px;
+    margin-left: 1px;
+}
+
+.videos iframe{
+    margin:0px;
+    padding:0px;
+    border:3px solid #0099ff25;
+    box-shadow: 1px 1px 3px 3px #0f3460 ;
+    border-radius: 20px;
+    width:94%;
+    height:400px;
+}
+.videos iframe:hover{
+    position:relative;
+    top:3px;
+    left:3px;
+    box-shadow: 1px 1px 10px 10px #0f3460 ;
+}
+
+
+@media screen and (max-width:883px){
+    .videos{
+        grid-template-columns: 1fr;
+        margin-top: 14px;
+        margin-bottom: 14px;
+    }
+} 
+
+@media screen and (max-width:570px){
+    .videos iframe{
+        height:300px;
+    }
+}
+
+
+.App form{
+    margin-top: 20px;
+}
+
+.App form input{
+    width:80%;
+    padding:10px;
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 14px;
+}
+
+.App form input::placeholder{
+    font-weight: normal;
+    color: #0000006b;
+}
+
+.App form button{
+    padding:10px 30px;
+    font-weight: bold;
+    font-size: 17px;
+    margin-left: 4px;
+    border-radius: 10px;
+
+}
+
+@media screen and (max-width:388px){
+    .videos iframe{
+        height:200px;
+    }
+    /* .App form{
+        display:grid;
+        grid-template-columns: 1fr;
+    } */
+}
