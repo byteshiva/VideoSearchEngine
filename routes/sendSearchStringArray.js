@@ -21,7 +21,7 @@ router.post("/", async (req, res) => {
   const endPoint1 =
     "https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=40&q=" +
     searchString +
-    "&key=AIzaSyBmWe2xrHIzw8LjOMyo16Ho4RaU8-EVa34";
+    "&key=AIzaSyC238iacEYlnq4l55V7F4jgPEjU7vi721k";
 //   console.log(endPoint1);
   try {
     const response = await axios.get(endPoint1);
