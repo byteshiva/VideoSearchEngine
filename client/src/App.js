@@ -33,7 +33,7 @@ function App() {
         );
       });
       setIframes(iframes1);
-      alert('Please wait until all the videos are finished loading!')
+      console.log('Please wait until all the videos are finished loading!')
     } catch (err) {
       console.log(err);
     }
@@ -44,7 +44,7 @@ function App() {
   
   return (
     <div className="App">
-      <h1 style={{color:'white',textAlign:'center'}}>Welcome you Devil May Cry Video Service</h1>
+      <h1 style={{color:'white',textAlign:'center'}}>Search YouTube Video's</h1>
       <form onSubmit={(e) => submitHandler(e)}>
         <input type="text" required id="searchString" name="searchString" placeholder="Search" />
         <button type="Search">Search</button>
